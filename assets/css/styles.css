@@ -1,0 +1,239 @@
+.main {
+    display: flex;
+    margin: 2rem auto;
+}
+
+.main .home-phones img{
+    display: none;
+}
+
+.main .home-login {
+    margin: 0 auto;
+}
+
+.home-login .login {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    border: 1px solid #DBDBDB;
+}
+
+.login .name img{
+    width: 175px;
+    margin: 2.5rem;
+    cursor: pointer;
+}
+
+.login .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+}
+
+.information input{
+    width: 252.4px;
+    height: 18.4px;
+    padding: .5rem;
+    font-size: .8rem;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: .1rem;
+}
+
+.information button {
+    width: 270px;
+    height: 32px;
+    margin: .5rem;
+    font-weight: 500;
+    color: white;
+    background-color: #4CB5F9;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.opition-login .separator {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    margin: .7rem 0;
+}
+
+.separator::before, .separator::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.separator span {
+    color: #737373;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 1.1rem;
+}
+
+.opition-login .login-facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #385185;
+    cursor: pointer;
+}
+
+.login-facebook span {
+    display: flex;
+    justify-content: center;
+    margin-left: .5rem;
+}
+
+.opition-login .reset-password {
+    font-size: .75rem;
+    color: #00376B;
+    cursor: pointer;
+    margin: 1.4rem;
+}
+
+.home-login .register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .6rem;
+    width: 350px;
+    height: 62px;
+    text-align: center;
+    font-size: .875rem;
+    border: 1px solid #DBDBDB;
+    gap: 1ch;
+}
+
+.register p {
+    margin: 0;
+}
+
+.register span {
+    font-weight: 600;
+    color: #0095F6;
+    cursor: pointer;
+}
+
+.home-login .download {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: .875rem;
+}
+
+.download p {
+    margin: 1rem;
+}
+
+.button-download img{
+    margin: 0 auto;
+    height: 40px;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 1rem;
+    font-size: .75rem;
+    text-align: center;
+    color: #737373;
+}
+
+.footer .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about div {
+    margin: 0 .5rem .75rem .5rem;
+}
+
+.about div a {
+    color: #737373;
+}
+
+.about div a:hover {
+    text-decoration: underline;
+}
+
+.footer .footer-opition {
+    display: flex;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.footer-opition .select-language {
+    border: none;
+    color: #737373;
+}
+
+.footer-opition .select-language:focus {
+    outline: none;
+}
+
+@media screen and (min-width: 874px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .main .home-phones {
+        position: relative;
+    }
+    
+    .main .home-phones .phones{
+        width: 381px;
+        height: 581px;
+        background-image: url('https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones-2x.png?__makehaste_cache_breaker=73SVAexZgBW');
+        background-repeat: no-repeat;
+        background-position: center 0;
+        background-size: 468.32px 634.15px;
+    }
+    .main .home-phones img {
+        position: absolute;
+        left: 114px;
+        top: 26px;
+        display: block;
+    }
+
+    .main .home-login {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .home-login .login {
+        border: none;
+        width: 100vw;
+    }
+
+    .home-login .register {
+        border: none;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    .opition-login .separator {
+        width: 60vw;
+    }
+
+    .information input{
+        width: 56vw;
+    }
+
+    .information button {   
+        width: 60vw;
+    }
+    
+}
